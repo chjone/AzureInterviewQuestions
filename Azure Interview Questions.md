@@ -1,54 +1,5 @@
 ![](media/image1.jpeg){width="1.8732392825896762in" height="4.2in"}
 
-Abstract
-========
-
-Microsoft launched Azure in year 2009 as "Windows Azure". In the recent
-years, Microsoft brought lot of openness into their entire range of
-products and platform. With this, it is now no longer "Windows Azure"
-but it is now "Microsoft Azure".
-
-**About Us and idea of this book**
-
-Both of us are Microsoft MVPs from past many years. We work closely in
-Microsoft communities across India and also work closely with lot of
-customers and enterprises as part of our day jobs. We both are
-passionate about Azure and we both think that it is the future and today
-is the right time to Learn, Build, Deploy and Enjoy Azure and Azure
-Services and take our work, businesses to next level. While we say this,
-we observed that there is a huge population of Developers and IT
-Professionals who wish to go on Azure or pursue a career in Cloud (Azure
-to be very specific). We also observed that while giving interviews many
-people just give high level details when they interviewed on Azure since
-either there is lack of awareness in them or they somehow not able to
-get deeper dive. That creates a big impact not only on their planned
-career in Azure but also they miss opportunities despite having good
-development background.
-
-Hence we thought we should address this concern and to start with
-release v 1.0 of this book to enable both experience and inexperience
-developers to clear their Technical interviews on Azure effectively and
-efficiently. This is not a guide for Microsoft Certification on Azure
-but it is more of a resource guide to clear your Technical Interviews on
-Azure.
-
-**What this book will do?**
-
-Take the fear out of your interview and never be stuck for the right
-answer to even the toughest questions with The Microsoft Azure Interview
-Questions Book. The job market is fierce, competition has never been
-greater and it\'s vital that you can grab every opportunity for
-competitive advantage and stay one step ahead with the knowledge of
-leading cloud computing technology platform "**Microsoft Azure**".
-Interviewers are looking for people who really stand out, and here\'s
-your chance to be different from the rest. Written by two Microsoft
-Azure experts, this definitive guide to questions and answers encourages
-every job-hunter to think on your feet and express your individuality
-whilst supplying ideal responses to interview questions so that you\'re
-seen as the ideal candidate for the job.
-
-Let's get started!!
-
 Contents {#contents .TOC-Heading}
 ========
 
@@ -76,25 +27,6 @@ Contents {#contents .TOC-Heading}
 
 [An Appeal to readers 24](#an-appeal-to-readers)
 
-Structure of the book
-=====================
-
-The book has been structured into various topics. For each topic a set
-of important and frequently asked questions are drafted along with short
-answers which specifically an interviewer will look for. This short
-answer is the key for you in interview. To make you understand the
-question and answer background along with all the details, after answers
-to the question, you have "**Deep dive"** section that explains the
-concept and background behind the short answer with detailed
-information. This will help you to understand the concept, provide you
-more information, so depending on the situation in interview you can
-explain the diagrams, concepts with more confidence.
-
-General
-=======
-
-This section highlights introductory questions and answers for general
-cloud concepts with MS Azure as a focus.
 
 What is cloud computing
 -----------------------
