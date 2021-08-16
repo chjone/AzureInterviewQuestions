@@ -1,2 +1,2 @@
 # AzureInterviewQuestions
-FREE Azure Interview Questions for Beginners
+Azure Interview Questions
