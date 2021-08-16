@@ -11,10 +11,9 @@ Contents
 
 [Azure Messaging](#azure-messaging-service-bus)
 
-[Identity in Azure -- Azure Active Directory
-23](#identity-in-azure-azure-active-directory)
+[Identity in Azure -- Azure Active Directory](#identity-in-azure-azure-active-directory)
 
-[References](#references)
+
 
 
 
@@ -391,6 +390,7 @@ web.config file.
 As cloud configuration file is not bound with application no app pool
 restart scenario happens upon changes.
 
+
 How to achieve zero downtime in cloud service deployments during upgrades and all hardware failures?
 ----------------------------------------------------------------------------------------------------
 
@@ -408,6 +408,7 @@ power supply is a Fault domain.
 
 **Definition** - So a fault domain is set of hardware components like
 computers, switches that share single point of failure.
+
 
 **What is single point of failure** -- is a part of the system, if it
 fails, will stop the entire system from working.
@@ -438,6 +439,7 @@ then second upgrade domain based instance gets updated and so on. So at
 any point of time during upgrade at least one instance is alive and
 serving the users request hence you don't face the downtime of your
 application.
+
 
 Why does Azure recommend to run at least 2 instances of cloud service roles?
 ------------------------------------------------------------------------
@@ -554,6 +556,7 @@ software such as SharePoint, SQL server, Dynamics AX, CRM VMs images are
 readily available for consumption.
 
 10. This point is self-explanatory.
+
 
 What is the best practice for achieving the High availability of applications running on Azure VM having web tier and DB tier?
 ------------------------------------------------------------------------------------------------------------------------------
@@ -680,8 +683,8 @@ What is the difference between SQL Server on Azure VM and Azure SQL Database?
 |    | available.                    | available.                    |
 +----+-------------------------------+-------------------------------+
 
-Azure Networking -- VNET
-========================
+Azure Networking
+================
 
 This section will cater to some example questions where Hybrid
 implementation is the key focus of Azure deployment.
@@ -881,8 +884,8 @@ first convert the existing VM disks into vhd format and then can be
 uploaded to Azure storage. Once the disk files are present on Azure, VM
 can be provisioned.
 
-Azure Messaging -- Service Bus
-==============================
+Azure Messaging
+===============
 
 This section focusses on important and common questions related to Azure
 Service bus offering.
