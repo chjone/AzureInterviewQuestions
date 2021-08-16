@@ -85,6 +85,24 @@ Company don't have to worry about hardware, licenses, OS management,
 backup etc. and just to need to pay what they use. This is nothing but
 the cloud computing and why cloud came into existence.
 
+
+What is the Azure Fabric?
+-------------------------
+Essentially it's called the OS for Azure since it handles/oversees:
+
+- All roles (processing) and resources
+- Sending and activating services
+- Monitoring the health of all services
+- Releasing and allocating resources
+- Provisioning VM, terminating, etc.
+- Patches get updated for the installed OS on VM in the most automated form
+
+What is Windows Azure Traffic Manager?
+--------------------------------------
+It enables users to control the distribution of user traffic of installed Azure cloud services. There are three distinctive load-balancing strategies provided by Azure. The Manager who works on traffic applies a routing policy to the Domain Name Service (DNS) questions on your domain names and maps the DNS courses to the apt instances of your applications.
+
+
+
 What are the benefits, advantages of cloud computing?
 -----------------------------------------------------
 
@@ -1007,3 +1025,54 @@ What is the difference between Azure AD and Windows Server AD?
   5    Can't be integrated with enterprise ready SaaS applications.                                                                                                                                      The nature of Azure AD enables to integrate with enterprise grade SaaS applications such as Salesforce, Facebook at work, dropbox and so on.
   6    You have access to underlying Domain controller as this is Infra offering.                                                                                                                        No access to underlying servers as this is PaaS offering and communication happens using internet facing endpoints.
 
+What is Conditional Access in Azure?
+--------------------------------------
+Conditional Access is used by Azure AD as a tool to make decisions, bring signals together, and impose organizational policies.
+
+Through Conditional Access policies, one can implement the right access controls whenever required to keep the organization secure and stay out of the users’ way when not needed.
+
+What is the difference between PTA and PHS?
+-------------------------------------------
+PHS: Auth happens in the cloud, agentless and doesn't require sso
+PTA: Auth happens in the cloud AFTER the password is exchanged on-prem by the PTA agent.
+
+What is the difference between enterprise and registered apps?
+--------------------------------------------------------------
+- Enterprise apps blade shows global apps (from other tenants) that can be configured and used within your organization.
+- App Registration is mostly local apps, provided they have been registered with a unique application identifier.
+
+If I have a hybrid joined device and it shows as pending in the portal what can be the issue and how would you solve that?
+--------------------------------------------------------------
+If the Hybrid device is showing as pending in the Azure portal, it is possible that the device registration has not been completed or updated, use Dsregcmd /status command and check PRT status, is primary refresh token is NO, please re-register the device and once the device gets PRT to check the status in the portal it will show correct status.
+
+If the application is on-prem and you want that to be managed on azure what will you do?
+--------------------------------------------------------------
+We can configure an application proxy for this, this will allow users of the cloud to login to on-prim applications. For this, we need to install and configure the Application proxy on-prem also.
+
+If the application is on-prem and you want that to be managed on azure what will you do?
+--------------------------------------------------------------
+We can configure an application proxy for this, this will allow users of the cloud to login to on-prim applications. For this, we need to install and configure the Application proxy on-prem also.
+
+What is SSPR?
+--------------------------------------------------------------
+Active Directory (AD) self-service password reset (SSPR) allows users to change or reset their passwords without help from an administrator.
+
+How is risk determined in Azure Identity protection?
+--------------------------------------------------------------
+Risk is determined in azure Identity protection on the basis of anonymous IP, leaked credentials, typical travel, etc.
+
+What is the key difference between Azure AD, Azure registered and hybrid joined devices?
+- Hybrid Azure AD Joined is for:
+-- corporate owned and managed devices
+-- Authenticated using a corporate user id that exists at local AD & on AAD.
+-- Authentication can be done using both: On-Prem AD & Azure AD.
+
+- Azure AD Joined is for
+-- Corporate owned and managed devices
+-- Authenticated using a corporate id that exists on Azure AD
+-- Authentication is only through AAD.
+
+- AAD Registed Device is for
+-- Personally owned corporate enabled
+-- Authentication to the device is with a local id or personal cloud id
+-- Authentication to corporate resources using a user id on AAD.
