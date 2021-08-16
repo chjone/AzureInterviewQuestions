@@ -11,7 +11,7 @@ Contents
 
 [Azure Messaging](#azure-messaging-service-bus)
 
-[Identity in Azure -- Azure Active Directory](#identity-in-azure-azure-active-directory)
+[Azure Active Directory](#identity-in-azure-azure-active-directory)
 
 
 
@@ -379,35 +379,6 @@ is used for storing --
 The primary aim or purpose of this file is to allow configuration
 changes in production environment without downtime of your application.
 
-**Deep Dive:**
-
-When you make changes to web configuration file while web application is
-running and active in IIS, the App Pool gets restarted, current user
-sessions are lost. For instance, imagine web application hosted in IIS
-as "desktop application". So if you save web.config file it's exactly
-similar to closing the opening the desktop application again. Therefore,
-let's say if we store azure storage connection string in web config file
-and after certain days or weeks you regenerated the primary key of
-storage account for security reasons, then you need to change it in web
-config file. However, if you do that, app pool will be restarted and
-application downtime may be experienced. Therefore, you may want to
-store these changing configuration settings (like azure storage
-connection string) in a file which is external to application binaries
-and deployment package so that change in it will not affect the running
-application at all. This can have treated as [External Configuration
-Store](https://msdn.microsoft.com/en-us/library/dn589803.aspx) Design
-Pattern and cloud service configuration file is the implementation of
-this pattern.
-
-The .cscfg file settings can be modified from the azure portal itself.
-This means you don't have to redeploy the entire application which could
-have been the case if you have had used web.config file and needed a
-change in it. This is the benefit of cloud configuration file over
-web.config file.
-
-As cloud configuration file is not bound with application no app pool
-restart scenario happens upon changes.
-
 
 How to achieve zero downtime in cloud service deployments during upgrades and all hardware failures?
 ----------------------------------------------------------------------------------------------------
@@ -574,6 +545,35 @@ software such as SharePoint, SQL server, Dynamics AX, CRM VMs images are
 readily available for consumption.
 
 10. This point is self-explanatory.
+
+Name some of the VM instances available within Azure
+----------------------------------------------------
+- Compute optimized
+- General purpose
+- GPU
+- High performance
+- ...
+
+What are the advantages of the Azure Resource Manager?
+--
+Azure Resource Manager enables users to manage their usage of application resources. Few of the advantages of Azure Resource Manager are:
+
+ARM helps deploy, manage and monitor all the resources for an application, a solution or a group
+Users can be granted access to resources they require
+It obtains comprehensive billing information for all the resources in the group
+Provisioning resources is made much easier with the help of templates
+
+What are Azure blueprints and policies?
+- Azure policy is essentially an access system that provides default allow and explicit deny on new and existing resource properties to which the policy is applied.
+- Azure Blueprint is a package for creating specific sets of standards and requirements that govern the implementation of Azure services, security, and design.
+
+What are some use cases for using blueprints and or policies?
+--
+- control where and how resoruces are provisioned
+- manage compliance
+- auditing
+- policy enforcement
+
 
 
 What is the best practice for achieving the High availability of applications running on Azure VM having web tier and DB tier?
@@ -1055,7 +1055,7 @@ We can configure an application proxy for this, this will allow users of the clo
 
 What is SSPR?
 --------------------------------------------------------------
-Active Directory (AD) self-service password reset (SSPR) allows users to change or reset their passwords without help from an administrator.
+Azure ad provides the seamless way for password reset for its user. You don’t need any admin or network team help for password resetting or unlocking the account. This reduce burden on IT helpdesk team of any organization.
 
 How is risk determined in Azure Identity protection?
 --------------------------------------------------------------
@@ -1076,3 +1076,4 @@ What is the key difference between Azure AD, Azure registered and hybrid joined 
 -- Personally owned corporate enabled
 -- Authentication to the device is with a local id or personal cloud id
 -- Authentication to corporate resources using a user id on AAD.
+
