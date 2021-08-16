@@ -3,29 +3,22 @@
 Contents {#contents .TOC-Heading}
 ========
 
-[Abstract 1](#abstract)
+[Azure Services - Compute](#azure-services---compute)
 
-[Structure of the book 3](#structure-of-the-book)
+[Azure Services - Data and Storage](#azure-services---data-and-storage)
 
-[General 4](#general)
+[Azure Networking](#azure-networking-vnet)
 
-[Azure Services - Compute 10](#azure-services---compute)
+[Azure Migration](#azure-migration)
 
-[Azure Services - Data and Storage
-16](#azure-services---data-and-storage)
-
-[Azure Networking -- VNET 18](#azure-networking-vnet)
-
-[Azure Migration 18](#azure-migration)
-
-[Azure Messaging -- Service Bus 21](#azure-messaging-service-bus)
+[Azure Messaging](#azure-messaging-service-bus)
 
 [Identity in Azure -- Azure Active Directory
 23](#identity-in-azure-azure-active-directory)
 
-[References 24](#references)
+[References](#references)
 
-[An Appeal to readers 24](#an-appeal-to-readers)
+
 
 
 What is cloud computing
