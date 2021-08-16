@@ -1,6 +1,4 @@
-![](media/image1.jpeg){width="1.8732392825896762in" height="4.2in"}
-
-Contents {#contents .TOC-Heading}
+Contents
 ========
 
 [Azure Services - Compute](#azure-services---compute)
@@ -1004,21 +1002,3 @@ What is the difference between Azure AD and Windows Server AD?
   5    Can't be integrated with enterprise ready SaaS applications.                                                                                                                                      The nature of Azure AD enables to integrate with enterprise grade SaaS applications such as Salesforce, Facebook at work, dropbox and so on.
   6    You have access to underlying Domain controller as this is Infra offering.                                                                                                                        No access to underlying servers as this is PaaS offering and communication happens using internet facing endpoints.
 
-References
-==========
-
-<https://azure.microsoft.com/en-us/get-started/>
-
-An Appeal to readers
-====================
-
-Thanks for reading through! We hope you found this interview guide trial
-version useful. We will love to hear about topics you want to get
-covered as a part of full version of this book. Requesting you to take 2
-minutes of your time and send your thoughts to
-
-E-mail: cloudqna2016\@outlook.com
-
-Or
-
-Tweet: \@AzureInterviews (AzureQNA)
