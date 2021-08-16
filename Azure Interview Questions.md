@@ -439,10 +439,12 @@ any point of time during upgrade at least one instance is alive and
 serving the users request hence you don't face the downtime of your
 application.
 
-Why Azure recommends to run at least 2 instances of cloud service roles?
+Why does Azure recommend to run at least 2 instances of cloud service roles?
 ------------------------------------------------------------------------
+When we have 2 or more instances running for a role in cloud service then
+automatically the deployment gets distributed across different fault and
+upgrade domains and achieves almost or near to zero downtime.
 
-Answered as part of Deep Dive section of question no 8.
 
 What is difference between Cloud Service "Role Instance VM" and "Cloud Service VM\"?
 ------------------------------------------------------------------------------------
