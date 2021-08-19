@@ -8,22 +8,24 @@ How long are Windows 10 builds support?
 - Pro = 18 months
 - Enterprise - Spring builds = 18-months, Fall builds 30-months
 
+
+
 List the core security features of Windows 10
 --
-- Application Control
-- Windows Defender
-- Microsoft Defender for Endpoint
-- Application Guard*
-- Credential Guard*
-- Windows Hello
-- Attack Surface Reduction Rules (ASR's)*
-- Secure Boot
-- Measure Boot
-- Bitlocker
-- Applocker
-- Device Guard
-- GPO
-- Baselines
+- Application Control - app whitelisting
+- Windows Defender - anti-virus
+- Microsoft Defender for Endpoint - endpoint detection and response
+- Application Guard* - sandbox isolation of apps and untrusted websites
+- Credential Guard* - credential isolation
+- Windows Hello - passwordless logon
+- Attack Surface Reduction Rules (ASR's)* - controls used to lock down common attack vectors
+- Secure Boot -  ensures that a device boots using only the software that is trusted by the OEM
+- Measure Boot - provides antimalware software with a trusted (resistant to spoofing and tampering) log of all boot components that started before antimalware software.
+- Bitlocker - software based disk encryption
+- Applocker - legacy application whitelisting
+- Device Guard - hardware backed application whitelisting
+- GPO - controls the working environment of user accounts and computer accounts. centralized policy management
+- Security Baselines - secure and protect users and devices. Security baselines are pre-configured groups of Windows settings that help you apply the security settings that are recommended by the relevant security teams.
 
 Describe the process for provisioning a Windows OS for broad deployment.
 --
@@ -112,3 +114,44 @@ What is DMARC, DKIM, and SPF?
 - DMARC: Domain-Based Message Authentication Reporting and Conformance, is an added authentication method that uses both SPF and DKIM to verify whether or not an email was actually sent by the owner of the “Friendly-From” domain that the user sees.
 - DKIM: DomainKeys Identified Mail, lets an organization (or handler of the message) take responsibility for a message that is in transit.
 - SPF: Sender Policy Framework, is an email validation protocol designed to detect and block email spoofing. It allows mail exchangers to verify that incoming mail from a specific domain comes from an IP Address authorized by that domain’s administrators
+
+What is Teams Island Mode?
+--
+Skype for Business talks to Skype for Business, and Teams talks to Teams. Users are expected to run both clients at all times and can communicate natively in the client from which the communication was started.
+
+What tools are available for app compatibility?
+--
+- Enterprise Mode
+- Desktop AppAsure
+- App-V
+- MSIX
+- Application Compatibility Toolkit
+
+How do you connect to O365/Microsoft tenats with PowerShell?
+--
+- Import PowerShell module for AzureAD
+- - Install-Module -Name AzureAD
+- - Connect to your tenant using 'Connect-AzureAD' and enter admin creds
+- - Run Connect-MsolService
+
+Analysts are reporting that their Power BI dashboards/reports are performing poorly. What can be done to improve the performance?
+--
+- Leverage the Performance Analyzer tool
+- Use Query Diagnostics in Power BI Desktop
+- Consider moving to Power BI Premium capacity
+- Power BI Premium Metrics app
+- Use SQL Server Profiler to identify queries that are slow
+- Use the Power BI Premium Metrics app to monitor the health and capacity of your Power BI Premium subscription
+
+Regarding Power BI, What feature acts as a bridge to provide quick and secure data transfer between on-premises data (data that isn't in the cloud) and several Microsoft cloud services?
+--
+On-premises data gateway
+
+What is the Windows Early Launch Anti-Malware?
+--
+ELAM is ensured to be launched before any third-party software, and is therefore able to detect malware in the boot process and prevent it from initializing.
+
+Describe what split-tunneling is used for.
+--
+A method for enterprises to mitigate the risk of VPN infrastructure saturation and dramatically improve performance for applications in the shortest timeframe possible. 
+
